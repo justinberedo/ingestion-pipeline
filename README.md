@@ -100,3 +100,6 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
     2023-11-05 09:21:33 - INFO - Number of records loaded to transactions table: 1
     2023-11-05 09:21:33 - INFO - Number of records updated in users table: 1
     ```
+
+## Tests
+- To run the unit tests: `pytest tests`
