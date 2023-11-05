@@ -105,17 +105,14 @@ def etl(
 
         # Update total_spent
         df_sum_per_user = sum_amount_per_user(df_transactions=df_transactions)
-        print(df_sum_per_user)
         df_current_user_amount = get_current_user_amount(
             db_instance=db_instance,
             user_ids=df_sum_per_user['user_id'].tolist()
         )
-        print(df_current_user_amount)
         df_new_total_spent = get_new_total_spent_per_user(
             df_sum_per_user=df_sum_per_user,
             df_current_user_amount=df_current_user_amount
         )
-        print(df_new_total_spent)
         update_total_spent(
             dataframe=df_new_total_spent,
             db_instance=db_instance
