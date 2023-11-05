@@ -5,6 +5,7 @@ Objective: Design and implement an ETL process that collects data from a set of 
 ## Solution Overview
 ![Alt text](images/image.png)
 ## Prerequisites
+- Python 3.10.X
 - docker compose
 
 
