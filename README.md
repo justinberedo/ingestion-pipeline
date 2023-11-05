@@ -33,9 +33,9 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
 
 ## Running the pipeline
 1. Make sure the virtual environment is activated: `source .venv/bin/activate` 
-2. To run the pipeline, in the terminal run `python src/etl.py`
+2. To run the pipeline, in the terminal run `python etl.py`
     ```
-    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python src/etl.py
+    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python etl.py
     2023-11-05 09:13:43 - INFO - Number of records from data_sources/users.csv: 5
     2023-11-05 09:13:43 - INFO - Number of records from data_sources/transactions.csv: 9
     2023-11-05 09:13:43 - INFO - Latest user_id in users table: None
@@ -56,7 +56,7 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
     ```
     Running the pipeline will output:
     ```
-    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python src/etl.py
+    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python etl.py
     2023-11-05 09:16:54 - INFO - Number of records from data_sources/users.csv: 6
     2023-11-05 09:16:54 - INFO - Number of records from data_sources/transactions.csv: 9
     2023-11-05 09:16:54 - INFO - Latest user_id in users table: 5
@@ -72,7 +72,7 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
     Running the pipeline will output:
 
     ```
-    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python src/etl.py
+    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python etl.py
     2023-11-05 09:18:02 - INFO - Number of records from data_sources/users.csv: 6
     2023-11-05 09:18:02 - INFO - Number of records from data_sources/transactions.csv: 11
     2023-11-05 09:18:02 - INFO - Latest user_id in users table: 6
@@ -91,7 +91,7 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
     ```
     Running the pipeline will output:
     ```
-    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python src/etl.py
+    (.venv) justinberedo@pop-os:~/github/first-circle-de-code-test$ python etl.py
     2023-11-05 09:21:33 - INFO - Number of records from data_sources/users.csv: 7
     2023-11-05 09:21:33 - INFO - Number of records from data_sources/transactions.csv: 12
     2023-11-05 09:21:33 - INFO - Latest user_id in users table: 6
