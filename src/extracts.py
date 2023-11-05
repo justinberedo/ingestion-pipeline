@@ -1,5 +1,5 @@
 import pandas as pd
-from postgresql_db import PostgreSQLDatabase
+from src.postgresql_db import PostgreSQLDatabase
 import logging
 
 
@@ -16,6 +16,7 @@ def read_csv(file_path: str) -> pd.DataFrame:
         return df
     except Exception as e:
         logging.error(e)
+        raise Exception(e)
 
 
 def get_latest_id(
@@ -33,6 +34,7 @@ def get_latest_id(
         return latest_id
     except Exception as e:
         logging.error(e)
+        raise Exception(e)
 
 
 def get_current_user_amount(
@@ -50,3 +52,4 @@ def get_current_user_amount(
         return pd.DataFrame(results)
     except Exception as e:
         logging.error(e)
+        raise Exception(e)

@@ -11,3 +11,5 @@ def check_for_missing_values(dataframe: pd.DataFrame):
     if dataframe.isnull().values.any():
         logging.error("DataFrame contains missing values.")
         raise ValueError("DataFrame contains missing values.")
+    else:
+        return True

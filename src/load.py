@@ -1,6 +1,6 @@
 import logging
 import pandas as pd
-from postgresql_db import PostgreSQLDatabase
+from src.postgresql_db import PostgreSQLDatabase
 from io import StringIO
 
 
@@ -34,6 +34,7 @@ def insert_to_table(
         )
     except Exception as e:
         logging.error(e)
+        raise Exception(e)
 
 
 def update_total_spent(
@@ -59,3 +60,4 @@ def update_total_spent(
         )
     except Exception as e:
         logging.error(e)
+        raise Exception(e)
