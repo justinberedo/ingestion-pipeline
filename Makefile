@@ -7,10 +7,12 @@ check_python_version:
 		exit 1; \
 	fi
 
-dev: check_python_version
+venv: check_python_version
 	python3 -m venv .venv
-	. .venv/bin/activate
-	pip install -r requirements.txt
+
+install:
+	. .venv/bin/activate; \
+	pip install -r requirements.txt; \
 
 HOST=localhost
 DB_USERNAME=db_user

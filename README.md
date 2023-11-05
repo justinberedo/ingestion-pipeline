@@ -30,7 +30,8 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
     (2 rows)
     ```
 ### Virtual Environment
-1. Run `make dev` to create the virtual environment, activate it, and install the dependencies.
+1. Run `make venv` to create the virtual environment inside `.venv`.
+2. Then run `make install` to install the dependencies.
 
 ## Running the pipeline
 1. Make sure the virtual environment is activated: `source .venv/bin/activate` 
