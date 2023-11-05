@@ -85,7 +85,7 @@ To run the ingestion pipeline, we need to run a local PostgreSQL database and se
     ```
 3. Lastly, say there are new records in `users.csv`
     ```
-    7,Justin Hart, justinhard@email.com,2023-11-05
+    7,Justin Hart, justinhart@email.com,2023-11-05
     ```
     and in `transactions.csv`
     ```
